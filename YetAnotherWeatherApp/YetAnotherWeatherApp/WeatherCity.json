@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -104.98,
+        "lat": 39.74
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 49.12,
+        "feels_like": 40.86,
+        "temp_min": 42.69,
+        "temp_max": 54.68,
+        "pressure": 1010,
+        "humidity": 63
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 29.93,
+        "deg": 20,
+        "gust": 41.43
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1682644270,
+    "sys": {
+        "type": 2,
+        "id": 2004334,
+        "country": "US",
+        "sunrise": 1682597138,
+        "sunset": 1682646554
+    },
+    "timezone": -21600,
+    "id": 5419384,
+    "name": "Denver",
+    "cod": 200
+}
