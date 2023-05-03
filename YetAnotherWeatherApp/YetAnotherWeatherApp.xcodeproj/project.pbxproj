@@ -18,7 +18,9 @@
 		43CD82972A020B5D00F44F54 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82942A020B5D00F44F54 /* WeatherView.swift */; };
 		43CD82982A020B5D00F44F54 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82932A020B5D00F44F54 /* WeatherRow.swift */; };
 		43CD829A2A020B6C00F44F54 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82992A020B6C00F44F54 /* WeatherDetailViewModel.swift */; };
+		43CD829D2A020B7600F44F54 /* WeatherGeocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD829C2A020B7600F44F54 /* WeatherGeocoding.swift */; };
 		43CD829E2A020B7600F44F54 /* WeatherCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD829B2A020B7600F44F54 /* WeatherCity.swift */; };
+		43CD82A12A020B8600F44F54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD829F2A020B8600F44F54 /* LocationManager.swift */; };
 		43CD82A22A020B8600F44F54 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82A02A020B8600F44F54 /* WeatherManager.swift */; };
 		43CD82A52A020BBE00F44F54 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82A42A020BBE00F44F54 /* enums.swift */; };
 		43CD82A72A020BC700F44F54 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82A62A020BC700F44F54 /* URLConstants.swift */; };
@@ -38,6 +40,8 @@
 		43CD82952A020B5D00F44F54 /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 		43CD82992A020B6C00F44F54 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
 		43CD829B2A020B7600F44F54 /* WeatherCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCity.swift; sourceTree = "<group>"; };
+		43CD829C2A020B7600F44F54 /* WeatherGeocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherGeocoding.swift; sourceTree = "<group>"; };
+		43CD829F2A020B8600F44F54 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		43CD82A02A020B8600F44F54 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		43CD82A32A020B9900F44F54 /* WeatherCity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherCity.json; sourceTree = "<group>"; };
 		43CD82A42A020BBE00F44F54 /* enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				43CD82682A02069C00F44F54 /* AppDelegate.swift */,
 				43CD82A32A020B9900F44F54 /* WeatherCity.json */,
 				43CD829B2A020B7600F44F54 /* WeatherCity.swift */,
+				43CD829C2A020B7600F44F54 /* WeatherGeocoding.swift */,
 				43CD826A2A02069C00F44F54 /* SceneDelegate.swift */,
 				43CD82992A020B6C00F44F54 /* WeatherDetailViewModel.swift */,
 				43CD82A62A020BC700F44F54 /* URLConstants.swift */,
@@ -86,7 +91,9 @@
 				43CD82932A020B5D00F44F54 /* WeatherRow.swift */,
 				43CD82942A020B5D00F44F54 /* WeatherView.swift */,
 				43CD82862A02082500F44F54 /* Main.storyboard */,
+				43CD829F2A020B8600F44F54 /* LocationManager.swift */,
 				43CD82A02A020B8600F44F54 /* WeatherManager.swift */,
+				43CD82A42A020BBE00F44F54 /* enums.swift */,
 				43CD82712A02069D00F44F54 /* Assets.xcassets */,
 				43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */,
 				43CD82762A02069D00F44F54 /* Info.plist */,
@@ -171,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CD829D2A020B7600F44F54 /* WeatherGeocoding.swift in Sources */,
+				43CD829A2A020B6C00F44F54 /* WeatherDetailViewModel.swift in Sources */,
+				43CD82A12A020B8600F44F54 /* LocationManager.swift in Sources */,
 				43CD82972A020B5D00F44F54 /* WeatherView.swift in Sources */,
 				43CD82962A020B5D00F44F54 /* WeatherDetailView.swift in Sources */,
 				43CD826D2A02069C00F44F54 /* ViewController.swift in Sources */,

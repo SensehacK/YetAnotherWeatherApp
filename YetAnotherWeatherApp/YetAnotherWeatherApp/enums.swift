@@ -8,6 +8,7 @@
 import Foundation
 
 enum openWeatherFeature {
+    case city(name:String)
     case latLon(Latitude:String, Longitude: String)
 }
 
