@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		439C48C92A02F3FB005D7EF7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C48C82A02F3FB005D7EF7 /* UserDefaults.swift */; };
 		43CD82692A02069C00F44F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82682A02069C00F44F54 /* AppDelegate.swift */; };
 		43CD826B2A02069C00F44F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD826A2A02069C00F44F54 /* SceneDelegate.swift */; };
 		43CD826D2A02069C00F44F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD826C2A02069C00F44F54 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		439C48C82A02F3FB005D7EF7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		43CD82652A02069C00F44F54 /* YetAnotherWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CD82682A02069C00F44F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CD826A2A02069C00F44F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				43CD829F2A020B8600F44F54 /* LocationManager.swift */,
 				43CD82A02A020B8600F44F54 /* WeatherManager.swift */,
+				439C48C82A02F3FB005D7EF7 /* UserDefaults.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				43CD829E2A020B7600F44F54 /* WeatherCity.swift in Sources */,
 				43CD82692A02069C00F44F54 /* AppDelegate.swift in Sources */,
 				43CD82A52A020BBE00F44F54 /* enums.swift in Sources */,
+				439C48C92A02F3FB005D7EF7 /* UserDefaults.swift in Sources */,
 				43CD826B2A02069C00F44F54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

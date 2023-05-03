@@ -26,14 +26,7 @@ class LocationManager: NSObject, ObservableObject {
     func requestLocation() {
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
-    }
-    
-    func checkIfLocationServicesAreEnabled() {
-        if CLLocationManager.locationServicesEnabled() {
-            print("Didn't get the system wide approval!")
-        } else {
-            print("Show an alert or UIView to let the end user about enabling in settings!")
-        }
+        
     }
     
 }
@@ -49,7 +42,9 @@ extension LocationManager: CLLocationManagerDelegate {
     
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        WeatherAppPreferences.shared.set(key: .locationAccessGranted, value: "false")
         print("ERROR! Retrieving location!", error.localizedDescription)
+        manager.requestLocation()
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -59,10 +54,20 @@ extension LocationManager: CLLocationManagerDelegate {
             print("not determined - hence ask for Permission")
             manager.requestWhenInUseAuthorization()
         case .restricted, .denied:
-            checkIfLocationServicesAreEnabled()
+            // Couldn't test these different scenarios since I only had simulator access and no unlocked iPhone to directly test.
+            WeatherAppPreferences.shared.set(key: .locationAccessGranted, value: "false")
             print("permission denied")
+            if CLLocationManager.locationServicesEnabled() {
+                print("Did get the system wide approval!")
+                manager.requestWhenInUseAuthorization()
+                manager.requestLocation()
+            }
+            else {
+                print("Show an alert or UIView to let the end user about enabling in settings!")
+            }
         case .authorizedAlways, .authorizedWhenInUse:
             print("Apple delegate gives the call back here once user taps Allow option, Make sure delegate is set to self")
+            WeatherAppPreferences.shared.set(key: .locationAccessGranted, value: "true")
             manager.requestLocation()
         @unknown default:
             print("Unknown")

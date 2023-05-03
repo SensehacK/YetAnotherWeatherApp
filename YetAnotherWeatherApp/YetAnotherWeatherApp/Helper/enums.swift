@@ -16,3 +16,10 @@ enum unitSystem: String {
     case imperial
     case metric
 }
+
+
+enum UserDefaultsKey: String {
+    case citySearched
+    case locationAccessGranted
+    
+}
