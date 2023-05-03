@@ -24,6 +24,24 @@ class WeatherManager {
         return city
     }
     
+    func getWeatherByCity(name: String) async -> WeatherCity? {
+        let constructedURL = URLConstants.buildURL(method: .city(name: name))
+
+        do {
+            let cityCoordinates = try await AsyncNetwork.shared.fetchDataArray(url: constructedURL, type: CityAPIElement.self)
+            guard
+               let cityCoord = cityCoordinates.first,
+               let city = await getCurrentWeather(latitude: cityCoord.lat,
+                                                  longitude: cityCoord.lon) else {
+                
+                return nil
+            }
+            return city
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
 
 }
 

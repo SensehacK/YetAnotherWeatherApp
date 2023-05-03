@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 import CoreLocation
 
 class ViewController: UIViewController {
@@ -34,7 +35,29 @@ class ViewController: UIViewController {
     }
     }
 
+    @IBAction func searchCity(_ sender: Any) {
+        statusLabel.isHidden = true
+        
+        Task {
+            guard let text = weatherSearchField.text,
+                  text.count > 2
+            else {
+                return
+            }
 
+            guard let city = await getWeatherCityby(name: text) else {
+                statusLabel.isHidden = false
+                WeatherManager
+                    .shared
+                    .$status
+                    .receive(on: DispatchQueue.main)
+                    .assign(to: \.text!, on: statusLabel)
+                    .store(in: &anyCancellables)
+                return
+            }
+            initializeWeatherView(city: city)
+        }
+    }
     
     @IBAction func shareLocationPressed(_ sender: Any) {
         statusLabel.isHidden = true
