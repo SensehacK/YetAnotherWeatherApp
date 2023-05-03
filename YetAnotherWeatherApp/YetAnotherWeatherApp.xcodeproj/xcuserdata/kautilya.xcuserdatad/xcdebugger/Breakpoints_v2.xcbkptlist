@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D6056E81-3F92-46CE-89CE-B5539B07FD4E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88410777-55D9-4865-B17C-803BDCE6BC20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "shouldRestoreState()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "88410777-55D9-4865-B17C-803BDCE6BC20 - a438a67a54e4d4a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldResumeState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "88410777-55D9-4865-B17C-803BDCE6BC20 - 6755886f9def443c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F53600D8-ED28-4997-8C39-DC03D3C131D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "shouldRestoreState()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F53600D8-ED28-4997-8C39-DC03D3C131D3 - a438a67a54e4d40f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldResumeState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "F53600D8-ED28-4997-8C39-DC03D3C131D3 - 6755886f9def449b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "580">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B206E5B9-41BA-49FE-B7CD-33DE08B07B6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "shouldRestoreState()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B206E5B9-41BA-49FE-B7CD-33DE08B07B6E - 6755886f9def441f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "B206E5B9-41BA-49FE-B7CD-33DE08B07B6E - 6755886f9def441f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "B206E5B9-41BA-49FE-B7CD-33DE08B07B6E - 6755886f9def4a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "B206E5B9-41BA-49FE-B7CD-33DE08B07B6E - 6755886f9def4a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YetAnotherWeatherApp.ViewController.shouldRestoreState() -&gt; ()"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C244027-C9EC-4AB4-8B7A-2527811ED319"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/UserDefaults.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "shouldResumeState()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "204EFACE-51D4-4D7D-95C3-FD9140131976"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/UserDefaults.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "shouldResumeState()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C09955D2-E738-4E4A-9129-0D469687A083"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/UserDefaults.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "shouldResumeState()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1128D9D8-463F-4095-AB6F-0160B7DCDA74"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "initializeLocationWithWeatherView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C268ED4-ED87-4F0F-BBF9-93A6B4E5CCDA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "shouldRestoreState()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAF2CF32-1CE0-41DB-B86B-E1F5A9D9D88C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getCurrentWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AAF2CF32-1CE0-41DB-B86B-E1F5A9D9D88C - 77d82ad0d9fe6835"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "AAF2CF32-1CE0-41DB-B86B-E1F5A9D9D88C - 57f1cfee513ec3dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "AAF2CF32-1CE0-41DB-B86B-E1F5A9D9D88C - 84930b524698aa37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "AAF2CF32-1CE0-41DB-B86B-E1F5A9D9D88C - cd31fb94872a4d36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB623365-CCFA-4CA6-8958-52D44626D2C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getCurrentWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB623365-CCFA-4CA6-8958-52D44626D2C5 - 84930b524698aa54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "BB623365-CCFA-4CA6-8958-52D44626D2C5 - cd31fb94872a4d55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B50E338-76F6-489B-998A-82F28B303C9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YetAnotherWeatherApp/Managers/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getCurrentWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B50E338-76F6-489B-998A-82F28B303C9F - 84930b524698aacb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "4B50E338-76F6-489B-998A-82F28B303C9F - cd31fb94872a4dca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for YetAnotherWeatherApp.WeatherManager.getCurrentWeather(latitude: Swift.Double, longitude: Swift.Double) async -&gt; Swift.Optional&lt;YetAnotherWeatherApp.WeatherCity&gt;"
+                  moduleName = "YetAnotherWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Kautilya/Interviews/JPMorgan/YetAnotherWeatherApp/YetAnotherWeatherApp/YetAnotherWeatherApp/Managers/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
