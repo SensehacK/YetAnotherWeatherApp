@@ -60,6 +60,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		439C48C32A02F258005D7EF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43CD82A32A020B9900F44F54 /* WeatherCity.json */,
+				43CD829C2A020B7600F44F54 /* WeatherGeocoding.swift */,
+				43CD829B2A020B7600F44F54 /* WeatherCity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		439C48C42A02F302005D7EF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43CD82992A020B6C00F44F54 /* WeatherDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		439C48C52A02F30D005D7EF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43CD82932A020B5D00F44F54 /* WeatherRow.swift */,
+				43CD82952A020B5D00F44F54 /* WeatherDetailView.swift */,
+				43CD82942A020B5D00F44F54 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		439C48C62A02F31B005D7EF7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				43CD829F2A020B8600F44F54 /* LocationManager.swift */,
+				43CD82A02A020B8600F44F54 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		439C48C72A02F32A005D7EF7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				43CD82A62A020BC700F44F54 /* URLConstants.swift */,
+				43CD82A42A020BBE00F44F54 /* enums.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		43CD825C2A02069C00F44F54 = {
 			isa = PBXGroup;
 			children = (
@@ -79,21 +125,15 @@
 		43CD82672A02069C00F44F54 /* YetAnotherWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				439C48C72A02F32A005D7EF7 /* Helper */,
+				439C48C62A02F31B005D7EF7 /* Managers */,
+				439C48C32A02F258005D7EF7 /* Model */,
+				439C48C52A02F30D005D7EF7 /* View */,
+				439C48C42A02F302005D7EF7 /* ViewModel */,
 				43CD82682A02069C00F44F54 /* AppDelegate.swift */,
-				43CD82A32A020B9900F44F54 /* WeatherCity.json */,
-				43CD829B2A020B7600F44F54 /* WeatherCity.swift */,
-				43CD829C2A020B7600F44F54 /* WeatherGeocoding.swift */,
 				43CD826A2A02069C00F44F54 /* SceneDelegate.swift */,
-				43CD82992A020B6C00F44F54 /* WeatherDetailViewModel.swift */,
-				43CD82A62A020BC700F44F54 /* URLConstants.swift */,
 				43CD826C2A02069C00F44F54 /* ViewController.swift */,
-				43CD82952A020B5D00F44F54 /* WeatherDetailView.swift */,
-				43CD82932A020B5D00F44F54 /* WeatherRow.swift */,
-				43CD82942A020B5D00F44F54 /* WeatherView.swift */,
 				43CD82862A02082500F44F54 /* Main.storyboard */,
-				43CD829F2A020B8600F44F54 /* LocationManager.swift */,
-				43CD82A02A020B8600F44F54 /* WeatherManager.swift */,
-				43CD82A42A020BBE00F44F54 /* enums.swift */,
 				43CD82712A02069D00F44F54 /* Assets.xcassets */,
 				43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */,
 				43CD82762A02069D00F44F54 /* Info.plist */,
