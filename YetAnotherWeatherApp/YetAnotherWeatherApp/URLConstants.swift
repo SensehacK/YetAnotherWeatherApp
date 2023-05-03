@@ -24,6 +24,8 @@ struct URLConstants {
     // Dummy URLS
     struct Dummy {
         static let latLonURL: String = "https://api.openweathermap.org/data/2.5/weather?lat=40.730610&lon=-73.935242&appid=b25ecd39a0f08f16aed86d6ffaafc964&units=imperial"
+        static let cityURL: String = "https://api.openweathermap.org/data/2.5/weather?lat=40.730610&lon=-73.935242&appid=b25ecd39a0f08f16aed86d6ffaafc964&units=imperial"
+        static let geoCoding: String = "http://api.openweathermap.org/geo/1.0/direct?q=denver&limit=1&appid=b25ecd39a0f08f16aed86d6ffaafc964"
     }
 
     // Can always utilize URL components for better verification
@@ -38,6 +40,9 @@ struct URLConstants {
                 return Dummy.geoCoding
             }
             
+        case .latLon(let lat, let lon):
+            return baseURL + latKey + lat + lonKey + lon + apiURL + unitsKey + unit.rawValue
+        }
     }
 }
 

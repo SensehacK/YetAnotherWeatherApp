@@ -16,6 +16,45 @@ class WeatherDetailViewModel: ObservableObject {
     
     // Private
     private var anyCancellables = Set<AnyCancellable>()
+    private var locationManager: LocationManager = LocationManager.shared
+    
+    func fetchWeatherByLocation() -> WeatherCity? {
+        let _ = locationManager
+            .$location
+
+            .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
+            .asyncMap { location -> WeatherCity? in
+                let weatherService = WeatherManager.shared
+                return await weatherService.getCurrentWeather(latitude: location.0,
+                                                              longitude: location.1)
+            }
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] weather in
+                if let weather {
+                    self?.weatherVM = WeatherViewModel(city: weather)
+                }
+            }
+            .store(in: &anyCancellables)
+        return nil
+    }
+    
+    func fetchWeatherByLocation2() {
+        locationManager
+            .$location
+            .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
+            .asyncMap { location -> WeatherViewModel? in
+                let weatherService = WeatherManager.shared
+                if let weatherCity =  await weatherService.getCurrentWeather(latitude: location.0,
+                                                                             longitude: location.1) {
+                    return WeatherViewModel(city: weatherCity)
+                }
+                return nil
+            }
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$weatherVM)
+    }
+    
+    
     func fetchWeatherByCity(name: String) {
         locationManager
             .$location

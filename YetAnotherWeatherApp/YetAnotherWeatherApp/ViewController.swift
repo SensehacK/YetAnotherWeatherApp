@@ -12,6 +12,7 @@ import SwiftUI
 
 class ViewController: UIViewController {
     
+    private var locationManager: LocationManager = LocationManager.shared
     private var anyCancellables = Set<AnyCancellable>()
     
     // IBOutlets
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.requestLocation()
         view.backgroundColor = .lightGray
     }
     
@@ -36,7 +38,28 @@ class ViewController: UIViewController {
         return await WeatherManager.shared.getWeatherByCity(name: name)
     }
     }
+    
+    
+    // Initialize UI screens
+    func initializeLocationWithWeatherView() {
+//        WeatherDetailViewModel
+        let vm = WeatherDetailViewModel()
+        vm.fetchWeatherByLocation2()
 
+        vm
+            .$weatherVM.print()
+            .sink { [weak self] weatherVM in
+                if let weatherVM {
+                    let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
+//                    swiftView.modalPresentationStyle = .fullScreen // Can enable this if we don't want to let user go back.
+                    self?.present(swiftView, animated: true)
+                }
+
+            }
+            .store(in: &anyCancellables)
+
+    }
+    
     
     func initializeWeatherView(city: WeatherCity) {
         let weatherVM = WeatherViewModel(city: city)
@@ -70,6 +93,7 @@ class ViewController: UIViewController {
     
     @IBAction func shareLocationPressed(_ sender: Any) {
         statusLabel.isHidden = true
+        initializeLocationWithWeatherView()
     }
 }
 
