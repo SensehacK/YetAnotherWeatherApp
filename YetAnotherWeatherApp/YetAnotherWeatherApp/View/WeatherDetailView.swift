@@ -9,12 +9,31 @@ import SwiftUI
 import UserNotifications
 
 struct WeatherDetailView: View {
+    // You can instantiate viewModel from SwiftUI as well. But now I resorted back to UIKit ViewController.
+    // @StateObject var viewModel: WeatherDetailViewModel = WeatherDetailViewModel()
     @State var weatherVM: WeatherViewModel
     
     var body: some View {
         VStack {
             WeatherView(weather: weatherVM.city, icon: weatherVM.iconURL)
         }
+        .onAppear {
+            // We can notifications as well.
+//            UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert]) { _, _ in
+//                
+//            }
+        }
+        /*
+         When using SwiftUI ViewModel instantiation
+        .task {
+            for await newWeather in viewModel.$weatherVM.values {
+                if let newWeather {
+                    weatherVM = newWeather
+                }
+                
+            }
+        }
+        */
     }
 }
 
