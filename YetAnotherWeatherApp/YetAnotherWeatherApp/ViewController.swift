@@ -27,8 +27,17 @@ class ViewController: UIViewController {
     }
     
     
+    // MARK: - Data Calls
+    
+    func getWeatherCityby(name: String) async -> WeatherCity? {
+        return await WeatherManager.shared.getWeatherByCity(name: name)
+    }
     }
 
 
+    
+    @IBAction func shareLocationPressed(_ sender: Any) {
+        statusLabel.isHidden = true
+    }
 }
 
