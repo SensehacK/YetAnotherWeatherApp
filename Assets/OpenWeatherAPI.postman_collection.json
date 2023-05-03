@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "f95d8203-4823-4adb-a7f8-848c253196da",
+		"name": "JPMorgan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1173435"
+	},
+	"item": [
+		{
+			"name": "Lat & Lon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=40.730610&lon=-73.935242&appid=&units=imperial",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "40.730610"
+						},
+						{
+							"key": "lon",
+							"value": "-73.935242"
+						},
+						{
+							"key": "appid",
+							"value": ""
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeoCoding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/geo/1.0/direct?appid=&limit=1&q=tokyo",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"geo",
+						"1.0",
+						"direct"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "40.759211",
+							"disabled": true
+						},
+						{
+							"key": "lon",
+							"value": "-73.984638",
+							"disabled": true
+						},
+						{
+							"key": "appid",
+							"value": ""
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "q",
+							"value": "tokyo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
