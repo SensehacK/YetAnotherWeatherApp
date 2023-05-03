@@ -332,11 +332,15 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YetAnotherWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please provide location access";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Would need location access for showing weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please provide location access. We need your location in order to show you the weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,11 +364,15 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YetAnotherWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please provide location access";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Would need location access for showing weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please provide location access. We need your location in order to show you the weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
