@@ -10,9 +10,12 @@
 		43CD82692A02069C00F44F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82682A02069C00F44F54 /* AppDelegate.swift */; };
 		43CD826B2A02069C00F44F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD826A2A02069C00F44F54 /* SceneDelegate.swift */; };
 		43CD826D2A02069C00F44F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD826C2A02069C00F44F54 /* ViewController.swift */; };
-		43CD82702A02069C00F44F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CD826E2A02069C00F44F54 /* Main.storyboard */; };
 		43CD82722A02069D00F44F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CD82712A02069D00F44F54 /* Assets.xcassets */; };
 		43CD82752A02069D00F44F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */; };
+		43CD82872A02082500F44F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CD82862A02082500F44F54 /* Main.storyboard */; };
+		43CD82922A020B0C00F44F54 /* SwiftSense in Frameworks */ = {isa = PBXBuildFile; productRef = 43CD82912A020B0C00F44F54 /* SwiftSense */; };
+		43CD829E2A020B7600F44F54 /* WeatherCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD829B2A020B7600F44F54 /* WeatherCity.swift */; };
+		43CD82A22A020B8600F44F54 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD82A02A020B8600F44F54 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		43CD82682A02069C00F44F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CD826A2A02069C00F44F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43CD826C2A02069C00F44F54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43CD826F2A02069C00F44F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43CD82712A02069D00F44F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43CD82742A02069D00F44F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43CD82762A02069D00F44F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CD82862A02082500F44F54 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		43CD829B2A020B7600F44F54 /* WeatherCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCity.swift; sourceTree = "<group>"; };
+		43CD82A02A020B8600F44F54 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		43CD82A62A020BC700F44F54 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CD82922A020B0C00F44F54 /* SwiftSense in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +65,8 @@
 			children = (
 				43CD82682A02069C00F44F54 /* AppDelegate.swift */,
 				43CD826A2A02069C00F44F54 /* SceneDelegate.swift */,
+				43CD82A62A020BC700F44F54 /* URLConstants.swift */,
 				43CD826C2A02069C00F44F54 /* ViewController.swift */,
-				43CD826E2A02069C00F44F54 /* Main.storyboard */,
 				43CD82712A02069D00F44F54 /* Assets.xcassets */,
 				43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */,
 				43CD82762A02069D00F44F54 /* Info.plist */,
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = YetAnotherWeatherApp;
+			packageProductDependencies = (
+				43CD82912A020B0C00F44F54 /* SwiftSense */,
+			);
 			productName = YetAnotherWeatherApp;
 			productReference = 43CD82652A02069C00F44F54 /* YetAnotherWeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 43CD825C2A02069C00F44F54;
+			packageReferences = (
+				43CD82902A020B0C00F44F54 /* XCRemoteSwiftPackageReference "swift-sense" */,
+			);
 			productRefGroup = 43CD82662A02069C00F44F54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +140,7 @@
 			files = (
 				43CD82752A02069D00F44F54 /* LaunchScreen.storyboard in Resources */,
 				43CD82722A02069D00F44F54 /* Assets.xcassets in Resources */,
-				43CD82702A02069C00F44F54 /* Main.storyboard in Resources */,
+				43CD82872A02082500F44F54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CD826D2A02069C00F44F54 /* ViewController.swift in Sources */,
+				43CD82A72A020BC700F44F54 /* URLConstants.swift in Sources */,
+				43CD82A22A020B8600F44F54 /* WeatherManager.swift in Sources */,
+				43CD829E2A020B7600F44F54 /* WeatherCity.swift in Sources */,
 				43CD82692A02069C00F44F54 /* AppDelegate.swift in Sources */,
 				43CD826B2A02069C00F44F54 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		43CD826E2A02069C00F44F54 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43CD826F2A02069C00F44F54 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43CD82902A020B0C00F44F54 /* XCRemoteSwiftPackageReference "swift-sense" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SensehacK/swift-sense";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43CD82912A020B0C00F44F54 /* SwiftSense */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43CD82902A020B0C00F44F54 /* XCRemoteSwiftPackageReference "swift-sense" */;
+			productName = SwiftSense;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43CD825D2A02069C00F44F54 /* Project object */;
 }
