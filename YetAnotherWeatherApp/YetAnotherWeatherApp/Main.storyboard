@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_App_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YetAnotherWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +31,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwe-7W-SDc">
-                                <rect key="frame" x="176" y="466" width="41.333333333333343" height="21"/>
+                                <rect key="frame" x="5" y="466" width="383" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,10 +52,12 @@
                             <constraint firstItem="Lwe-7W-SDc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Vr-yf-zFU"/>
                             <constraint firstItem="lID-ZX-TKe" firstAttribute="top" secondItem="MIj-8M-Frq" secondAttribute="bottom" constant="58" id="CSa-pj-V5Z"/>
                             <constraint firstItem="Lwe-7W-SDc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hcf-bo-YRk"/>
+                            <constraint firstItem="Lwe-7W-SDc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWQ-r3-SGz"/>
                             <constraint firstItem="MIj-8M-Frq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VAL-iG-Rkd"/>
                             <constraint firstItem="lID-ZX-TKe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WOd-OR-tXP"/>
                             <constraint firstItem="lID-ZX-TKe" firstAttribute="centerX" secondItem="q7u-N4-w16" secondAttribute="centerX" id="WhA-Z2-Bh4"/>
                             <constraint firstItem="MIj-8M-Frq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVr-DQ-pDu"/>
+                            <constraint firstItem="Lwe-7W-SDc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ebi-p4-pao"/>
                             <constraint firstItem="q7u-N4-w16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eh2-46-FhK"/>
                             <constraint firstItem="Lwe-7W-SDc" firstAttribute="top" secondItem="q7u-N4-w16" secondAttribute="bottom" constant="80" id="eyo-D8-rz1"/>
                             <constraint firstItem="lID-ZX-TKe" firstAttribute="centerX" secondItem="MIj-8M-Frq" secondAttribute="centerX" id="izY-kL-kfm"/>
