@@ -21,7 +21,6 @@ class WeatherDetailViewModel: ObservableObject {
     func fetchWeatherByLocation() {
         locationManager
             .$location
-            .dropFirst()
             .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
             .asyncMap { location -> WeatherViewModel? in
                 let weatherService = WeatherManager.shared

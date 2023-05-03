@@ -77,12 +77,11 @@ class ViewController: UIViewController {
     
     // Initialize UI screens
     func initializeLocationWithWeatherView() {
-//        WeatherDetailViewModel
         let vm = WeatherDetailViewModel()
         vm.fetchWeatherByLocation()
 
         vm
-            .$weatherVM.print()
+            .$weatherVM
             .sink { [weak self] weatherVM in
                 if let weatherVM {
                     let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
