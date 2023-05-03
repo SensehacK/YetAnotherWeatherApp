@@ -8,9 +8,11 @@
 import UIKit
 import Combine
 import CoreLocation
+import SwiftUI
 
 class ViewController: UIViewController {
     
+    private var anyCancellables = Set<AnyCancellable>()
     
     // IBOutlets
     @IBOutlet weak var weatherSearchField: UITextField!
@@ -35,6 +37,13 @@ class ViewController: UIViewController {
     }
     }
 
+    
+    func initializeWeatherView(city: WeatherCity) {
+        let weatherVM = WeatherViewModel(city: city)
+        let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
+//        swiftView.modalPresentationStyle = .fullScreen // Can enable this if we don't want to let user go back.
+        self.present(swiftView, animated: true)
+    }
     @IBAction func searchCity(_ sender: Any) {
         statusLabel.isHidden = true
         
