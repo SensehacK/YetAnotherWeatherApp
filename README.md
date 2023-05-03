@@ -3,6 +3,7 @@
 
 ## Demo
 
+https://user-images.githubusercontent.com/8469205/236050685-3fade491-9fba-4fa8-8b9f-627c25e572bb.mp4
 
 
 
@@ -17,6 +18,12 @@
 - Utilized Async - Await
 - Combine based Location updates
 - Info Plist - Location & http security changes
+- Also commited my weather API key but I'll delete it from admin portal after it has served its purpose.
+
+## Tools
+
+- Postman API mocking config file
+https://github.com/SensehacK/YetAnotherWeatherApp/blob/main/Assets/OpenWeatherAPI.postman_collection.json
 
 ## Hurdle | Limitation
 
