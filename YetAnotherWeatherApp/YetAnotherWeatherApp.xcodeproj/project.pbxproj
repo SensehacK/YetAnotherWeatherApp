@@ -154,7 +154,6 @@
 		43CD825C2A02069C00F44F54 = {
 			isa = PBXGroup;
 			children = (
-				43344B3B2A082F6B00FAF3C1 /* YetAnotherWeatherApp_Clone_Location.xctestplan */,
 				43CD82672A02069C00F44F54 /* YetAnotherWeatherApp */,
 				43344B2E2A08184A00FAF3C1 /* YetAnotherWeatherAppTests */,
 				43CD82662A02069C00F44F54 /* Products */,
@@ -186,6 +185,7 @@
 				43CD82712A02069D00F44F54 /* Assets.xcassets */,
 				43CD82732A02069D00F44F54 /* LaunchScreen.storyboard */,
 				43CD82762A02069D00F44F54 /* Info.plist */,
+				43344B3B2A082F6B00FAF3C1 /* YetAnotherWeatherApp_Clone_Location.xctestplan */,
 			);
 			path = YetAnotherWeatherApp;
 			sourceTree = "<group>";

@@ -11,7 +11,6 @@ import Combine
 @testable import YetAnotherWeatherApp
 
 
-
 final class YetAnotherWeatherAppTests: XCTestCase {
 
     var viewModel: WeatherDetailViewModel?
