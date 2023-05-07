@@ -23,20 +23,21 @@ class WeatherDetailViewModel: ObservableObject {
     
     init(weatherService: WeatherServiceProtocol) {
         self.weatherService = weatherService
+        fetchWeatherByLocation()
     }
     
     func fetchWeatherByLocation() {
         locationManager
             .$location
-            .print("🧠 Location subscription ??")
             .compactMap { $0 }
+            .print("🧠 Location subscription ??")
             .asyncMap { [weak self] location in
                 let weatherCity = await self?.weatherService.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
                 return weatherCity
             }
             .compactMap { $0 }
+            .removeDuplicates()
             .map { WeatherViewModel(city: $0)}
-            .eraseToAnyPublisher()
             .receive(on: DispatchQueue.main)
             .assign(to: &$weatherVM)
     }
@@ -47,7 +48,6 @@ class WeatherDetailViewModel: ObservableObject {
             .$location
             .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
             .asyncMap { [weak self]  location -> WeatherViewModel? in
-                //                let weatherService = WeatherManager.shared
                 if let weatherCity = await self?.weatherService.getWeatherByCity(name: name) {
                     return WeatherViewModel(city: weatherCity)
                 }

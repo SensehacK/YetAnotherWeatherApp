@@ -8,7 +8,11 @@
 import Foundation
 
 // MARK: - WeatherCityAPI
-struct WeatherCity: Codable {
+struct WeatherCity: Codable, Equatable {
+    static func == (lhs: WeatherCity, rhs: WeatherCity) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     let coord: Coord
     let weather: [Weather]
     let base: String

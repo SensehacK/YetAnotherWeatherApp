@@ -79,18 +79,16 @@ class ViewController: UIViewController {
     
     // Initialize UI screens
     func initializeLocationWithWeatherView() {
-        locationManager.requestLocation()
         
-        viewModel.fetchWeatherByLocation()
-
         viewModel
             .$weatherVM
+            .compactMap { $0 }
             .sink { [weak self] weatherVM in
-                if let weatherVM {
-                    let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
-                    // swiftView.modalPresentationStyle = .fullScreen // Can enable this if we don't want to let user go back.
-                    self?.present(swiftView, animated: true)
-                }
+                print("How many times 🤓")
+                let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
+                // swiftView.modalPresentationStyle = .fullScreen // Can enable this if we don't want to let user go back.
+                self?.present(swiftView, animated: true)
+           
 
             }
             .store(in: &anyCancellables)
