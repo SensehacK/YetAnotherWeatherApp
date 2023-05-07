@@ -26,7 +26,6 @@ class LocationManager: NSObject, ObservableObject {
     func requestLocation() {
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
-        
     }
     
 }

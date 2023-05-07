@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "4A5B233C-1650-4BEE-A51F-B58BDD868C90",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "locationScenario" : {
+      "identifier" : "San Francisco, CA, USA",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:YetAnotherWeatherApp.xcodeproj",
+      "identifier" : "43CD82642A02069C00F44F54",
+      "name" : "YetAnotherWeatherApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:YetAnotherWeatherApp.xcodeproj",
+        "identifier" : "43344B2C2A08184A00FAF3C1",
+        "name" : "YetAnotherWeatherAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

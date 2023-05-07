@@ -17,9 +17,9 @@ class WeatherDetailViewModel: ObservableObject {
     
     // Private
     private var anyCancellables = Set<AnyCancellable>()
-    private var locationManager: LocationManager = LocationManager.shared
+    private(set) var locationManager: LocationManager = LocationManager.shared
     
-    private var weatherService: WeatherServiceProtocol
+    private(set) var weatherService: WeatherServiceProtocol
     
     init(weatherService: WeatherServiceProtocol) {
         self.weatherService = weatherService
@@ -50,8 +50,9 @@ class WeatherDetailViewModel: ObservableObject {
     }
     
     
-    private func testWeatherAPIByCity() {
-        Task {
+    func testWeatherAPIByCity() async -> [WeatherCity?] {
+        
+        let downloadCities = Task { () -> [WeatherCity?] in
             // So the idea behind this multiple Async calls is to get multiple weather cities
             // on app launch if the user has home view with saved cities as a list.
             var cityArr: [WeatherCity?] = []
@@ -60,14 +61,24 @@ class WeatherDetailViewModel: ObservableObject {
             async let city3 = getWeatherCityby(name: "Hyderabad")
 
             cityArr.append(contentsOf: await [city1, city2, city3])
-
             print("Async Calls")
             for city in cityArr {
                 if let city {
                     print("City: \(city.name), Feels like: \(city.main.feelsLike) ")
                 }
             }
+            return cityArr
         }
+        
+        
+        do {
+            let result = try await downloadCities.result.get()
+            return result
+        } catch {
+            
+        }
+        return []
+
     }
     
     

@@ -89,6 +89,7 @@ class ViewController: UIViewController {
                 statusLabel.isHidden = true
                 initializeLocationWithWeatherView()
             } else {
+                // In else case 
                 Task {
                     if let city = await viewModel.getWeatherCityby(name: result) {
                         initializeWeatherView(city: city)
