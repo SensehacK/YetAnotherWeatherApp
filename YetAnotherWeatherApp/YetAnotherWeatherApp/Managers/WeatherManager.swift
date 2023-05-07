@@ -8,7 +8,7 @@
 import SwiftSense
 import Combine
 
-class WeatherManager {
+class WeatherManager: WeatherServiceProtocol {
     
     // Singleton
     static var shared: WeatherManager = WeatherManager()

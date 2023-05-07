@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import CoreLocation
 
 @MainActor
 class WeatherDetailViewModel: ObservableObject {
@@ -17,19 +18,25 @@ class WeatherDetailViewModel: ObservableObject {
     // Private
     private var anyCancellables = Set<AnyCancellable>()
     private var locationManager: LocationManager = LocationManager.shared
-
+    
+    private var weatherService: WeatherServiceProtocol
+    
+    init(weatherService: WeatherServiceProtocol) {
+        self.weatherService = weatherService
+    }
+    
     func fetchWeatherByLocation() {
         locationManager
             .$location
-            .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
-            .asyncMap { location -> WeatherViewModel? in
-                let weatherService = WeatherManager.shared
-                if let weatherCity =  await weatherService.getCurrentWeather(latitude: location.0,
-                                                                             longitude: location.1) {
-                    return WeatherViewModel(city: weatherCity)
-                }
-                return nil
+            .print("🧠 Location subscription ??")
+            .compactMap { $0 }
+            .asyncMap { [weak self] location in
+                let weatherCity = await self?.weatherService.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                return weatherCity
             }
+            .compactMap { $0 }
+            .map { WeatherViewModel(city: $0)}
+            .eraseToAnyPublisher()
             .receive(on: DispatchQueue.main)
             .assign(to: &$weatherVM)
     }
@@ -39,9 +46,9 @@ class WeatherDetailViewModel: ObservableObject {
         locationManager
             .$location
             .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
-            .asyncMap { location -> WeatherViewModel? in
-                let weatherService = WeatherManager.shared
-                if let weatherCity = await weatherService.getWeatherByCity(name: name) {
+            .asyncMap { [weak self]  location -> WeatherViewModel? in
+                //                let weatherService = WeatherManager.shared
+                if let weatherCity = await self?.weatherService.getWeatherByCity(name: name) {
                     return WeatherViewModel(city: weatherCity)
                 }
                 return nil

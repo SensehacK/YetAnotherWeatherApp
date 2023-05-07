@@ -36,7 +36,8 @@ class LocationManager: NSObject, ObservableObject {
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Getting any location? in Delegate functions>")
+        print("Getting any location? in Delegate functions> \(locations.first?.coordinate)")
+        
         location = locations.first?.coordinate
     }
     

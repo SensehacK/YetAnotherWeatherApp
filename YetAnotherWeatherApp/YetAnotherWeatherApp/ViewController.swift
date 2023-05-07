@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     private var locationManager: LocationManager = LocationManager.shared
     private var anyCancellables = Set<AnyCancellable>()
+    private let viewModel = WeatherDetailViewModel(weatherService: WeatherManager.shared)
     
     // IBOutlets
     @IBOutlet weak var weatherSearchField: UITextField!
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
          Also changing locations settings in simulator isn't reflecting the changes properly.
          https://developer.apple.com/forums/thread/693317
         */
+        
         
         view.backgroundColor = .lightGray
         statusLabel.isHidden = true
@@ -77,10 +79,11 @@ class ViewController: UIViewController {
     
     // Initialize UI screens
     func initializeLocationWithWeatherView() {
-        let vm = WeatherDetailViewModel()
-        vm.fetchWeatherByLocation()
+        locationManager.requestLocation()
+        
+        viewModel.fetchWeatherByLocation()
 
-        vm
+        viewModel
             .$weatherVM
             .sink { [weak self] weatherVM in
                 if let weatherVM {
