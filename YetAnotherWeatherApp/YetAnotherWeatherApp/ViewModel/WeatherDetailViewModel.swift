@@ -24,7 +24,10 @@ class WeatherDetailViewModel: ObservableObject {
     init(weatherService: WeatherServiceProtocol) {
         self.weatherService = weatherService
         fetchWeatherByLocation()
+        // testWeatherAPIByCity()
     }
+    
+    // MARK: - Data Calls
     
     func fetchWeatherByLocation() {
         locationManager
@@ -42,19 +45,29 @@ class WeatherDetailViewModel: ObservableObject {
             .assign(to: &$weatherVM)
     }
     
+    func getWeatherCityby(name: String) async -> WeatherCity? {
+        return await weatherService.getWeatherByCity(name: name)
+    }
     
-    func fetchWeatherByCity(name: String) {
-        locationManager
-            .$location
-            .compactMap { ($0?.latitude ?? 0.0 , $0?.longitude ?? 0.0) }
-            .asyncMap { [weak self]  location -> WeatherViewModel? in
-                if let weatherCity = await self?.weatherService.getWeatherByCity(name: name) {
-                    return WeatherViewModel(city: weatherCity)
+    
+    private func testWeatherAPIByCity() {
+        Task {
+            // So the idea behind this multiple Async calls is to get multiple weather cities
+            // on app launch if the user has home view with saved cities as a list.
+            var cityArr: [WeatherCity?] = []
+            async let city1 = getWeatherCityby(name: "Mumbai")
+            async let city2 = getWeatherCityby(name: "London")
+            async let city3 = getWeatherCityby(name: "Hyderabad")
+
+            cityArr.append(contentsOf: await [city1, city2, city3])
+
+            print("Async Calls")
+            for city in cityArr {
+                if let city {
+                    print("City: \(city.name), Feels like: \(city.main.feelsLike) ")
                 }
-                return nil
             }
-            .receive(on: DispatchQueue.main)
-            .assign(to: &$weatherVM)
+        }
     }
     
     

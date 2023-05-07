@@ -40,46 +40,13 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .lightGray
         statusLabel.isHidden = true
-        // testWeatherAPIByCity()
+        
         shouldRestoreState()
         initializeStatusLabel()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-    }
-    
-    
-    // MARK: - Data Calls
-    
-    func getWeatherCityby(name: String) async -> WeatherCity? {
-        return await WeatherManager.shared.getWeatherByCity(name: name)
-    }
-    
-    func testWeatherAPIByCity() {
-        Task {
-
-            // So the idea behind this multiple Async calls is to get multiple weather cities
-            // on app launch if the user has home view with saved cities as a list.
-            var cityArr: [WeatherCity?] = []
-            async let city1 = getWeatherCityby(name: "Mumbai")
-            async let city2 = getWeatherCityby(name: "London")
-            async let city3 = getWeatherCityby(name: "Hyderabad")
-
-            cityArr.append(contentsOf: await [city1, city2, city3])
-
-            print("Async Calls")
-            for city in cityArr {
-                if let city {
-                    print("City: \(city.name), Feels like: \(city.main.feelsLike) ")
-                }
-            }
-        }
-    }
-    
-    
-    // Initialize UI screens
+    // MARK: - Initialize UI screens
     func initializeLocationWithWeatherView() {
-        
         viewModel
             .$weatherVM
             .compactMap { $0 }
@@ -88,11 +55,8 @@ class ViewController: UIViewController {
                 let swiftView = UIHostingController(rootView: WeatherDetailView(weatherVM: weatherVM))
                 // swiftView.modalPresentationStyle = .fullScreen // Can enable this if we don't want to let user go back.
                 self?.present(swiftView, animated: true)
-           
-
             }
             .store(in: &anyCancellables)
-
     }
     
     
@@ -115,7 +79,6 @@ class ViewController: UIViewController {
             .receive(on: DispatchQueue.main)
             .assign(to: \.text!, on: statusLabel)
             .store(in: &anyCancellables)
-        
     }
     
     // MARK: - Helper Functions
@@ -127,13 +90,12 @@ class ViewController: UIViewController {
                 initializeLocationWithWeatherView()
             } else {
                 Task {
-                    if let city = await getWeatherCityby(name: result) {
+                    if let city = await viewModel.getWeatherCityby(name: result) {
                         initializeWeatherView(city: city)
                     } else {
                         initializeStatusLabel()
                     }
                 }
-
             }
         }
     }
@@ -152,7 +114,7 @@ class ViewController: UIViewController {
                 return
             }
             WeatherAppPreferences.shared.set(key: .citySearched, value: text)
-            guard let city = await getWeatherCityby(name: text) else {
+            guard let city = await viewModel.getWeatherCityby(name: text) else {
                 statusLabel.isHidden = false
                 WeatherManager
                     .shared
